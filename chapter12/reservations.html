@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Pacific Trails Resort: Reservations</title>
+    <link rel="stylesheet" href="pacific.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Pacific Trails Resort </h1>
+        </header>
+        <nav>
+            <ul>
+                <li> <a href=" index.html"> Home </a></li>
+                <li> <a href="yurts.html"> Yurts</a></li>
+                <li> <a href="activities.html"> Activities</a></li>
+                <li> <a href="reservations.html">Reservations</a></li>
+                <li> <a href="shop.html">Shop</a></li>
+            </ul>
+        </nav>
+        
+        <main>
+            <h2>Reservations at Pacific Trails</h2>
+            <h3> Contact Us</h3>
+            <p> Required information is marked with an asterisk (*).</p>
+            <form method="POST" action="http://webdevbasics.net/scripts/pacific.php">
+            <label for="First Name" > *First Name </label>
+            <input type="text" name="myFName" id="myFName" required="required">
+            <label for="last Name">*Last Name</label>
+            <input type="text" name="myLName" id="myLName"required="required">
+            <label for="E-Mail">*E-Mail</label>
+            <input type="email" name="myEmail" id="myEmail"required="required">
+            <label for="Phone"> Phone</label>
+            <input type="tel" name="myPhone" id="myPhone">
+            <label for="arrivalDate"> Arrival Date</label>
+            <input type="date" name="arrivalDate" id="arrivalDate">
+            <label for="nights"> Nights</label>
+            <input type="number" name="nights" id="nights" min="1" max="14">
+            <label for="Comments">*Comments: </label>
+            <textarea name="myComments" id="myComments" rows="2" cols="20"required="required">
+            </textarea>
+            <input id="mySubmit" type="submit" value="submit">
+            </form>
+
+           
+            <span class="resort">Pacific Trails Resort</span> <br>
+            12010 Pacific Trails Road<br>Zephyr, CA 95555 <br>
+            &nbsp;
+
+
+
+            <div><a id="mobile" href="tel:888-555-5555 ">888-555-5555</a>
+                <span id="desktop">888-555-5555</span>
+            </div>
+
+        </main>
+
+        <footer>Copyright &copy; 2018 Pacific Trails Resort<br>
+
+            <a href="mailto:Tricia@Treat.com "> Tricia@Treat.com </a>
+        </footer>
+    </div>
+</body>
+
+</html>
